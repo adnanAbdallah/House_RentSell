@@ -1,0 +1,49 @@
+git init
+
+git config --global user.name "adnanAbdallah"
+git config user.email "adnan.ali.abdallah@gmail.com"
+
+git add .
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/adnanAbdallah/git_test.git
+git push -u origin main
+
+
+
+
+
+first git configuration :
+
+git config --global user.name "adnanAbdallah"
+git config --global user.email "adnan.ali.abdallah@gmail.com"
+git config --list 
+git init 
+
+touch index.html
+git status 
+
+git add index.html  //this add still need the commit (on the stage)
+git rm --cached index.html  //to instage
+git commit -m "message to commit"
+git log  //give all the commit
+git checkout <hash-number>   // this will retrieve the version with the specific hash
+git checkout master // this will return us to the last version
+git branch adnan //create new branch
+
+git checkout adnan //switch to adnan's branch
+git branch -D adnantayba //delete a branch 
+git branch //this will show all the local branch
+
+
+
+git remote add origin https://github.com/adnanAbdallah/mynew
+git push -u origin master
+git push -u --force origin master
+
+
+#to change the remote repo
+git remote set-url origin new-remote-url
+
+
