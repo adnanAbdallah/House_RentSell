@@ -1,0 +1,39 @@
+1-1  add package:   package for DbContext   >Nuget package manager Add package
+                     Microsoft.EntityFrameworkCore
+1-2  add package with cli:  dotnet add package {name of package} --version {version}
+
+
+2   for Sql server connection : Microsot.EntityFrameworkCore.SqlServer
+
+
+in appsetting.json add connection statement:
+
+
+4- Migration : 
+4-1 install migration tools:
+    dotnet tool install --global dotnet-ef 
+     Microsoft.EntityFrameworkCore.Design
+    //this command add the package in the backEnd.csproj file
+
+4-2 build the project after install to add the library
+4-3 Add Migration:
+    dotnet ef migrations add InitialDB --no-build 
+
+4-4 to push migration to database
+        dotnet ef database update
+
+
+5-1 to create project:
+    dotnet new webapi -n {ProjectName}
+5-2 to run swagger:
+    dotnet add package Swashbuckle.AspNetCore
+
+
+6-1 to use the patch request:
+    Microsoft.AspNetCore.Mvc.NewtonsoftJson
+    add it beside addController()  .AddNewsoftJson()
+
+
+
+
+
