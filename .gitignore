@@ -8,3 +8,4 @@ obj
 wwwroot
 *.cache
 node_modules
+Frontend\node_modules
