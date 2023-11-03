@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Property } from '../model/property';
 import { environment } from '../../environments/environment';
-import { Ikeyvaluepair } from '../model/ikeyvaluepair';
+import { Ikeyvaluepair } from '../model/IKeyValuePair';
 
 
 @Injectable({

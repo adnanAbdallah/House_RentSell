@@ -23,7 +23,7 @@ namespace WebAPI.Helpers
                 .ForMember(d => d.PropertyType, opt => opt.MapFrom(src => src.PropertyType.Name))
                 .ForMember(d => d.FurnishingType, opt => opt.MapFrom(src => src.FurnishingType.Name))
                 .ForMember(d => d.Photo, opt => opt.MapFrom(src => src.Photos
-                                .FirstOrDefault(p => p.IsPrimary).ImageUrl)); 
+                            .FirstOrDefault(p => p.IsPrimary).ImageUrl)); 
 
 
             CreateMap<Property, PropertyDetailDto>()

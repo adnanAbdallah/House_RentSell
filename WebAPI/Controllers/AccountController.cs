@@ -44,6 +44,7 @@ namespace WebAPI.Controllers
             loginRes.UserName = user.Username;
             loginRes.Token = CreateJWT(user);
             return Ok(loginRes);
+            
         }
 
         [HttpPost("register")]
@@ -85,7 +86,8 @@ namespace WebAPI.Controllers
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.UtcNow.AddMinutes(1),
+                // Expires = DateTime.UtcNow.AddMinutes(),
+                Expires = DateTime.UtcNow.AddHours(23),
                 SigningCredentials = signingCredentials
             };
 

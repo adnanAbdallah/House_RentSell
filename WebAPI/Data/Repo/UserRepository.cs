@@ -15,9 +15,9 @@ namespace WebAPI.Data.Repo
             this.dc = dc;
 
         }
-        public async Task<User> Authenticate(string userName, string passwordText)
+        public async Task<User?> Authenticate(string userName, string passwordText)
         {
-            var user =  await dc.Users.FirstOrDefaultAsync(x => x.Username == userName);
+            var user =  await dc.Userss.FirstOrDefaultAsync(x => x.Username == userName);
 
             if (user == null || user.PasswordKey == null)
                 return null;
@@ -60,12 +60,12 @@ namespace WebAPI.Data.Repo
             user.Password = passwordHash;
             user.PasswordKey = passwordKey;
 
-            dc.Users.Add(user);
+            dc.Userss.Add(user);
         }
 
         public async Task<bool> UserAlreadyExists(string userName)
         {
-            return await dc.Users.AnyAsync(x => x.Username == userName);
+            return await dc.Userss.AnyAsync(x => x.Username == userName);
         }
     }
 }

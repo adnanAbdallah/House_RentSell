@@ -267,7 +267,7 @@ namespace WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Userss");
                 });
 
             modelBuilder.Entity("WebAPI.Models.Photo", b =>

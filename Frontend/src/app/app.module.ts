@@ -55,6 +55,7 @@ const appRoutes: Routes = [
         SortPipe,
         PhotoEditorComponent
     ],
+
     imports: [
         BrowserModule,
         HttpClientModule,
@@ -69,6 +70,8 @@ const appRoutes: Routes = [
         NgxGalleryModule,
         FileUploadModule
     ],
+
+
     providers: [
         {
             provide: HTTP_INTERCEPTORS,

@@ -6,7 +6,7 @@ import { IPropertyBase } from 'src/app/model/ipropertybase';
 import { Property } from 'src/app/model/property';
 import { HousingService } from 'src/app/services/housing.service';
 import { AlertifyService } from 'src/app/services/alertify.service';
-import { Ikeyvaluepair } from 'src/app/model/ikeyvaluepair';
+import { Ikeyvaluepair } from 'src/app/model/IKeyValuePair';
 import { DatePipe } from '@angular/common';
 
 
